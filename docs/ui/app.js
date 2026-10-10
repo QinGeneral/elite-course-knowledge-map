@@ -30,8 +30,8 @@
   }
   function syncView(){
     document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===view;b.setAttribute('aria-selected',active);b.tabIndex=active?0:-1});
-    ['read','audit','brain','photos','recommend'].forEach(id=>$(id).hidden=id!==view);
-    $('tools').hidden=['photos','recommend'].includes(view);
+    ['read','audit','brain','photos'].forEach(id=>$(id).hidden=id!==view);
+    $('tools').hidden=view==='photos';
   }
   function setView(v){closeDetail(false);view=v;page=0;syncView();render();window.scrollTo({top:0,behavior:'auto'})}
   function resetFilters(){domain='';$('search').value='';$('status').value='';$('course').value='';$('fontStyle').value='';page=0;render()}
