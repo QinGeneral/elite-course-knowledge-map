@@ -29,6 +29,8 @@
 .siblings .concept-lettering{--concept-small:13px;--concept-medium:15px;--concept-large:18px}
 .uniform-typography .concept-lettering{font:550 16px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:inherit}.uniform-typography .detail-head .concept-lettering{font-size:23px}.uniform-typography table .concept-lettering{font-size:14px}
 @media(max-width:600px){.typebar{gap:9px 12px;padding-top:12px}.type-legend{gap:12px}.type-controls{margin-left:0;width:100%;justify-content:space-between}.type-controls select{flex:1;max-width:none}.type-help{margin-top:0}.concept-lettering{--concept-small:14px;--concept-medium:17px;--concept-large:22px}.item-title>strong{flex:1 1 100%}.item .tag{margin:1px 0 0}.detail-head .concept-lettering{--concept-small:20px;--concept-medium:25px;--concept-large:30px}.branch .concept-lettering{--concept-large:22px}}
+
+.repo-link{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex-shrink:0;border:1px solid var(--line);border-radius:8px;background:white;transition:background .15s,border-color .15s}.repo-link:hover{background:var(--accent-soft);border-color:var(--accent)}.repo-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.repo-link img{display:block;width:22px;height:22px}
 </style><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23176857%27/%3E%3Cpath d=%27M7 8h8l1 2 1-2h8v17h-8l-1 2-1-2H7z%27 fill=%27%23fff%27/%3E%3Cpath d=%27M16 11v12%27 stroke=%27%23176857%27/%3E%3C/svg%3E"><meta name="description" content="22个领域的精英日课知识地图：概念检索、课程全文、原图与Markdown资料。"></head><body>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
 <symbol id="ic-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></symbol>
@@ -43,7 +45,7 @@
 <symbol id="ic-reset" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 0 6M4 4v5h5"/></symbol>
 </defs></svg>
 <a class="skip" href="#main">跳到主要内容</a>
-<header class="app-header"><div class="top"><div class="identity"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#ic-book"/></svg></span><div><h1>精英日课知识地图</h1><p>从概念出发，找到背后的课程文章。</p></div></div><div class="header-actions"><div class="meta">核对与修订 · 2026.10.04<br>课程资料 · 原图可追溯</div></div></div>
+<header class="app-header"><div class="top"><div class="identity"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#ic-book"/></svg></span><div><h1>精英日课知识地图</h1><p>从概念出发，找到背后的课程文章。</p></div></div><div class="header-actions"><div class="meta">核对与修订 · 2026.10.04<br>课程资料 · 原图可追溯</div><a class="repo-link" href="https://github.com/QinGeneral/elite-course-knowledge-map" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 GitHub 仓库" title="GitHub 仓库"><img src="ui/icons/github.svg" alt="" width="22" height="22"></a></div></div>
 <nav class="tabs" role="tablist" aria-label="内容视图">
 <button id="tab-read" role="tab" data-view="read" aria-controls="read" aria-selected="true"><svg class="icon" aria-hidden="true"><use href="#ic-book"/></svg>阅读检索</button>
 <button id="tab-audit" role="tab" data-view="audit" aria-controls="audit" aria-selected="false"><svg class="icon" aria-hidden="true"><use href="#ic-audit"/></svg>核对明细</button>
